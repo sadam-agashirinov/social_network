@@ -9,14 +9,13 @@ using NUnit.Framework;
 
 namespace ApplicationIntegrationTests.Post.Commands;
 
-public class CreatePostHandlerTests
+public class CreatePostHandlerTests : BaseTest
 {
     [Test]
-    public async Task CreateCustomer()
+    public async Task CreateCustomer_Success()
     {
         //arrange
-        var dbContext = SocialNetworkDbContextFactory.Create();
-        var sut = new CreatePostCommandHandler(dbContext);
+        var sut = new CreatePostCommandHandler(DbContext);
         var requestData = new CreatePostCommand()
         {
             Post = "This is new post.",
@@ -27,14 +26,12 @@ public class CreatePostHandlerTests
         var postId = await sut.Handle(requestData, CancellationToken.None);
 
         //assert
-        var postFromEntity = await dbContext.Posts.SingleOrDefaultAsync(x => x.Id == postId);
+        var postFromEntity = await DbContext.Posts.SingleOrDefaultAsync(x => x.Id == postId);
 
         postFromEntity.Should().NotBeNull();
         postFromEntity.Id.Should().Be(postId);
         postFromEntity.Text.Should().Be(requestData.Post);
         postFromEntity.BloggerId.Should().Be(requestData.BloggerId);
         postFromEntity.Created.Should().NotBe(DateTime.MinValue);
-
-        SocialNetworkDbContextFactory.Destroy(dbContext);
     }
 }
