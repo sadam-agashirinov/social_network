@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{964F5B5E-129A-4E10-B689-34A7BA2783B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F6606CC7-F6DA-4E26-8973-6599474827CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{DA448079-27AC-4EA9-9943-2601B1E977DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,7 +16,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9FA99D27-BA75-4F04-80B9-267AED25420C} = {48005A60-5027-4A64-BF78-189E81362BBE}
 		{964F5B5E-129A-4E10-B689-34A7BA2783B5} = {48005A60-5027-4A64-BF78-189E81362BBE}
-		{F6606CC7-F6DA-4E26-8973-6599474827CF} = {48005A60-5027-4A64-BF78-189E81362BBE}
+		{DA448079-27AC-4EA9-9943-2601B1E977DA} = {48005A60-5027-4A64-BF78-189E81362BBE}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9FA99D27-BA75-4F04-80B9-267AED25420C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -27,9 +27,9 @@ Global
 		{964F5B5E-129A-4E10-B689-34A7BA2783B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{964F5B5E-129A-4E10-B689-34A7BA2783B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{964F5B5E-129A-4E10-B689-34A7BA2783B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6606CC7-F6DA-4E26-8973-6599474827CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6606CC7-F6DA-4E26-8973-6599474827CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6606CC7-F6DA-4E26-8973-6599474827CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6606CC7-F6DA-4E26-8973-6599474827CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA448079-27AC-4EA9-9943-2601B1E977DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA448079-27AC-4EA9-9943-2601B1E977DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA448079-27AC-4EA9-9943-2601B1E977DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA448079-27AC-4EA9-9943-2601B1E977DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
