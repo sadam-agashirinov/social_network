@@ -22,6 +22,7 @@ public class CreatePostCommandHandler : IRequestHandler<CreatePostCommand,Guid>
             Created = DateTime.Now
         };
         await _dbContext.Posts.AddAsync(post, cancellationToken);
+        await _dbContext.SaveChangesAsync(cancellationToken);
 
         return post.Id;
     }
